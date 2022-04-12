@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    background: url(bg.jpg); 
+    background-size: cover;
+    height: 100vh;
+}
+.navbar{
+    position: fixed;
+    padding: 10px;
+    width: 100%;
+    height: 90px;
+    background: rgba(0, 0, 0, 0.993);
+}
+.navbar ul{
+    float: right;
+    margin-right: 30px;
+}
+.navbar ul li{
+    list-style: none;
+    margin: 0 8px;
+    display: inline-block;
+    line-height: 90px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'roboto', 'sans-serif';
+    padding: 6px 13px;
+    transition: .4s;
+}
+.navbar ul li a.active,
+.navbar ul li a:hover{
+    background: orange;
+    border-radius: 5px;
+}
+.logo{
+    width: 240px;
+    height: auto;
+    padding: 100px;
+}
+.wrapper .center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'roboto' , 'sans-serif';
+    user-select: none;
+}
+.center h1{
+    color: white;
+    font-size: 120px;
+    font-weight: bold;
+    width: 900px;
+    text-align: center;
+    animation: movecenter 1s forwards;
+}
+.center h2{
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    width: 850px;
+    margin-top: 10px;
+    text-align: center;
+    animation: movecenter 2s forwards;
+}
+.center h3{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    width: 850px;
+    margin-top: 10px;
+    text-align: center;
+    animation: movecenter 3s forwards;
+}
+.center .buttons{
+    margin: 70px 330px;
+}
+.buttons button{
+    height: 50px;
+    padding: 5px, 5px;
+    width: 200px;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    background-color: orange;
+    border: 1px solid orange;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    animation: movecenter 4s forwards;
+}
+.buttons button:hover{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    transition: .7s;
+}
+
+@keyframes movecenter{
+    0%{
+        transform: translateY(10rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.page2{
+    height: 100vh;
+    width: auto;
+}
+.page2 h1{
+    text-align: center;
+    padding: 40px;
+}
+.page2 h2{
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+footer{
+    background-color: orange;
+    padding: 10px;
+    text-align: center;
+}
